@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>043.lesson_21</title>
+  </head>
+
+  <body>
+    <h1>Homework #43 (based on #23)</h1>
+    <div id="container">
+      <div id="categories">
+        <ul>
+          <h2>Категории товаров</h2>
+          <li>Холодильники</li>
+          <li>Телевизоры</li>
+          <li>Кофемашины</li>
+          <li>Ноутбуки</li>
+        </ul>
+      </div>
+
+      <div id="products">
+
+      </div>
+
+      <div id="product-details">
+        <h2></h2>
+        <img id="product-image" src="" alt="" />
+        <p id="product-description"></p>
+        <p id="product-price"></p>
+        <button id="buy-button" onclick="buyProduct()">Купити</button>
+      </div>
+    </div>
+    <div id="order-form" style="display: none">
+      <h2>Форма оформлення замовлення</h2>
+      <form id="order-form">
+        <label for="fullName">ПІБ покупця:</label>
+        <input type="text" id="fullName" required />
+
+        <label for="city">Місто:</label>
+        <select id="city" required>
+          <option value="Одеса">Одеса</option>
+          <option value="Київ">Київ</option>
+          <option value="Львів">Львів</option>
+          <option value="Харьків">Харьків</option>
+          <option value="Дніпро">Дніпро</option>
+        </select>
+
+        <label for="deliveryPoint">Склад Нової пошти:</label>
+        <input type="text" id="deliveryPoint" required />
+
+        <label for="paymentMethod">Спосіб оплати:</label>
+        <select id="paymentMethod" required>
+          <option value="Післяоплата">Післяоплата</option>
+          <option value="Оплата банківською карткою">
+            Оплата банківською карткою
+          </option>
+        </select>
+        <label for="quantity">Кількість товару:</label>
+        <input type="number" id="quantity" required />
+
+        <label for="comment">Коментар до замовлення:</label>
+        <textarea id="comment"></textarea>
+
+        <button type="button" onclick="submitOrder()">
+          Підтвердити замовлення
+        </button>
+      </form>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

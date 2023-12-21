@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+#categories {
+  flex: 1;
+  margin-right: 20px;
+}
+
+#products {
+  flex: 2;
+  margin-right: 20px;
+}
+
+#product-details {
+  flex: 1;
+}
+
+#buy-button {
+  display: none;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+#categories h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+#categories li {
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#categories li:hover {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+#products ul {
+  list-style: none;
+  padding: 0;
+}
+
+#products h2 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+#products li {
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  list-style: none;
+}
+
+#products li:hover {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+#order-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#order-form h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#order-form label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#order-form input,
+#order-form select,
+#order-form textarea {
+  font-size: 16px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+#order-form button {
+  font-size: 18px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#order-form button:hover {
+  background-color: #45a049;
+}
